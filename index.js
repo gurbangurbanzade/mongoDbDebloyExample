@@ -3,6 +3,7 @@ require("dotenv").config();
 require("./src/config/db");
 const bodyParser = require("body-parser");
 const app = express();
+var cors = require("cors");
 const userRouter = require("./src/routers/userRouter.js");
 
 const port = process.env.PORT || 3000;
